@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript-assingment-2</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		form{
+			width:400px;
+			margin: 0 auto;
+			background: #006699;
+		}
+		input{
+		width: 100%;
+		background: #006699;
+		border:1px solid #fff;
+		padding: 10px 0;
+		color: #fff;	
+		}
+		button{
+			width: 25%;
+			float: left;
+			padding: 10px;
+			font-size: 18px;
+			background: #006699;
+			border:1px solid #fff;
+			color: #fff;
+
+
+		}
+	</style>
+</head> 
+<body>
+<form name="form">
+<input type="text" name="display" readonly><br>
+
+<button type="button" onclick="clckseven()">7</button>
+<button type="button" onclick="clckeight()">8</button>
+<button type="button" onclick="clcknine()">9</button>
+<button type="button" onclick="clckdivide()">/</button>
+
+<button type="button" onclick="clckfour()">4</button>
+<button type="button" onclick="clckfive()">5</button>
+<button type="button" onclick="clcksix()">6</button>
+<button type="button" onclick="clckmulti()">* </button>
+
+
+<button type="button" onclick="clckone()">1</button>
+<button type="button" onclick="clcktwo()">2</button>
+<button type="button" onclick="clckthree()">3</button>
+<button type="button" onclick="clckplus()">+ </button>
+
+<button type="button" onclick="clckclear()">c</button><button type="button" onclick="clckzero()">0</button>
+<button type="button" onclick="clckequal()">=</button>
+<button type="button" onclick="clckminus()">-</button>
+	
+</form>
+
+
+<script>
+var OutPut=document.form.display;
+
+function clckseven(){
+	OutPut.value +=7;
+}
+function clckeight(){
+	OutPut.value +=8;
+}
+function clcknine(){
+	OutPut.value +=9;
+}
+function clckdivide(){
+	OutPut.value +="/";
+}
+function clckfour(){
+	OutPut.value +=4;
+}
+function clckfive(){
+	OutPut.value +=5;
+}
+function clcksix(){
+	OutPut.value +=6;
+}
+function clckmulti(){
+	OutPut.value +="*";
+}
+function clckone(){
+	OutPut.value +=1;
+}
+function clcktwo(){
+	OutPut.value +=2;
+}
+function clckthree(){
+	OutPut.value +=3;
+}
+function clckplus(){
+	OutPut.value +="+";
+}
+
+function clckzero(){
+	OutPut.value +=0;
+}
+function clckminus(){
+	OutPut.value +="-";
+}
+function clckclear(){
+	OutPut.value ="";
+}
+
+
+
+function clckequal(){
+var result =eval(OutPut.value);
+document.form.display.value =result;
+}
+
+</script>
+</body>
+</html>
